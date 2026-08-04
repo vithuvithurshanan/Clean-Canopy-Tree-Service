@@ -1,0 +1,5 @@
+export const PHONE = '716-869-6464'
+export const EMAIL = 'info@woodcresttreebuffalo.com'
+export const ADDRESS = '388 Lisbon Ave, Buffalo, NY 14215'
+export const FACEBOOK_URL = 'https://www.facebook.com'
+export const INSTAGRAM_URL = 'https://www.instagram.com'
