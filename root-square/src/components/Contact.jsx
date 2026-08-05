@@ -16,7 +16,7 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="section contact-inner">
         <div className="contact-image-wrap">
-          <img src="/contact-form.jpeg" alt="Clean Canopy Tree Service team at work" className="contact-image" />
+          <img src="/opt_contact-form.webp" alt="Clean Canopy Tree Service team at work" className="contact-image" />
           <div className="contact-image-badge">
             <span className="contact-badge-icon">🌲</span>
             <div>
@@ -50,6 +50,7 @@ export default function Contact() {
               data-layout-iframe-id="inline-IKGTvR9ZcYvlniQ2Qrtn"
               data-form-id="IKGTvR9ZcYvlniQ2Qrtn"
               title="Clean Canopy Tree Service"
+              loading="lazy"
             />
           </div>
         </div>

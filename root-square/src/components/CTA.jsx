@@ -14,7 +14,7 @@ export default function CTA() {
             Call {PHONE}
           </a>
         </div>
-        <img src="/work-tree.jpeg" alt="Clean Canopy Tree Service crew at work" className="cta-img" />
+        <img src="/opt_work-tree.webp" alt="Clean Canopy Tree Service crew at work" className="cta-img" width="600" height="450" />
       </div>
     </section>
   )

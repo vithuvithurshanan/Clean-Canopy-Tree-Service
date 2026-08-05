@@ -27,7 +27,7 @@ export default function Approach() {
               </li>
             ))}
           </ol>
-          <img src="/process-bg.webp" alt="Clean Canopy crew on a job site" className="approach-banner" />
+          <img src="/process-bg.webp" alt="Clean Canopy crew on a job site" className="approach-banner" width="600" height="338" />
         </div>
 
         <div className="approach-text">

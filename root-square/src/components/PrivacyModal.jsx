@@ -15,7 +15,7 @@ export default function PrivacyModal({ onClose }) {
     <div className="legal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Privacy Policy">
       <div className="legal-modal" onClick={(e) => e.stopPropagation()}>
         <div className="legal-modal-header legal-modal-header-bg">
-          <img src="/privacy-policy.jpeg" alt="" className="legal-header-img" />
+          <img src="/privacy-policy.webp" alt="" className="legal-header-img" />
           <div className="legal-header-overlay" />
           <div className="legal-header-banner">
             <h2>Privacy Policy</h2>

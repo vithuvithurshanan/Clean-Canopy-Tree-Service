@@ -4,7 +4,7 @@ import { PHONE } from '../constants'
 const members = [
   {
     tab: 'Arborist',
-    img: '/about-climber.webp',
+    img: '/opt_about-climber.webp',
     name: 'Marcus Webb',
     role: 'Lead Arborist · ISA Certified',
     bio: 'Over 15 years of professional tree care experience. ISA Certified Arborist and TCIA member. Specialises in hazard assessment, large tree removal, and storm damage response.',

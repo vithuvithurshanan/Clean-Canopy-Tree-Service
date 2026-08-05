@@ -23,7 +23,7 @@ export default function Testimonials() {
     <section className="testimonials" id="reviews">
       <div
         className="testimonials-bg"
-        style={{ backgroundImage: 'url(/voices-bg.webp)' }}
+        style={{ backgroundImage: 'url(/opt_voices-bg.webp)' }}
         aria-hidden="true"
       />
 

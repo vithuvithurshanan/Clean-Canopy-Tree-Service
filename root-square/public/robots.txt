@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clean-canopy-tree-service.web.app/sitemap.xml

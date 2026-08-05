@@ -32,7 +32,7 @@ const services = [
     bullets: ['24/7 emergency response', 'Fallen tree removal', 'Hazard limb clearing', 'Insurance documentation'],
   },
   {
-    img: '/about-climber.webp',
+    img: '/opt_about-climber.webp',
     title: 'Tree Health & Cabling',
     desc: 'Proactive care to extend the life of your valuable trees. We assess, treat, and structurally support trees at risk of failure.',
     bullets: ['ISA arborist assessment', 'Structural cabling', 'Disease & pest treatment', 'Fertilisation programs'],

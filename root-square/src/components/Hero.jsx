@@ -3,7 +3,7 @@ import { PHONE, EMAIL } from '../constants'
 export default function Hero() {
   return (
     <section className="hero hero-fullscreen" id="hero">
-      <div className="hero-bg" style={{ backgroundImage: 'url(/home.jpeg)' }} aria-hidden="true" />
+      <div className="hero-bg" style={{ backgroundImage: 'url(/opt_home.webp)' }} aria-hidden="true" />
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="hero-fullscreen-inner">

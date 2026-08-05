@@ -15,7 +15,7 @@ export default function TermsModal({ onClose }) {
     <div className="legal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Terms and Conditions">
       <div className="legal-modal" onClick={(e) => e.stopPropagation()}>
         <div className="legal-modal-header legal-modal-header-bg">
-          <img src="/terms.jpeg" alt="" className="legal-header-img" />
+          <img src="/terms.webp" alt="" className="legal-header-img" />
           <div className="legal-header-overlay" />
           <div className="legal-header-banner">
             <h2>Terms &amp; Conditions</h2>
