@@ -1,6 +1,7 @@
 import { EMAIL, INSTAGRAM_URL, PHONE, ADDRESS } from '../constants'
 
 const links = [
+    { label: 'Home', href: '#hero' },
   { label: 'Services', href: '#services' },
   { label: 'Our Process', href: '#approach' },
   { label: 'Reviews', href: '#reviews' },

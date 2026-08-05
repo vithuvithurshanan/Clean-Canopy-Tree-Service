@@ -14,9 +14,13 @@ export default function TermsModal({ onClose }) {
   return (
     <div className="legal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Terms and Conditions">
       <div className="legal-modal" onClick={(e) => e.stopPropagation()}>
-        <div className="legal-modal-header legal-modal-header-bg" style={{ backgroundImage: 'url(/terms.jpeg)' }}>
-          <h2>Terms &amp; Conditions</h2>
-          <button className="legal-close" onClick={onClose} aria-label="Close">✕</button>
+        <div className="legal-modal-header legal-modal-header-bg">
+          <img src="/terms.jpeg" alt="" className="legal-header-img" />
+          <div className="legal-header-overlay" />
+          <div className="legal-header-banner">
+            <h2>Terms &amp; Conditions</h2>
+            <button className="legal-close" onClick={onClose} aria-label="Close">✕</button>
+          </div>
         </div>
         <div className="legal-modal-body">
           <p className="legal-meta">Effective Date: January 19, 2025 | Last Updated: July 9, 2026</p>
