@@ -1,5 +1,4 @@
 import { initializeApp } from 'firebase/app'
-import { getAnalytics } from 'firebase/analytics'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyAGYzVLGBhnj0Lb7UhxtEdc7h0_ROZmP-U',
@@ -12,5 +11,14 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig)
-export const analytics = getAnalytics(app)
+
+// Lazy load analytics after page is interactive — keeps it out of critical path
+if (typeof window !== 'undefined') {
+  window.addEventListener('load', () => {
+    import('firebase/analytics').then(({ getAnalytics }) => {
+      getAnalytics(app)
+    })
+  })
+}
+
 export default app

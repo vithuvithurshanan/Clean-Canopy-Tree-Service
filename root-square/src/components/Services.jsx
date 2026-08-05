@@ -2,37 +2,37 @@ import { PHONE } from '../constants'
 
 const services = [
   {
-    img: '/svc-trimming.webp',
+    img: 'https://s3.amazonaws.com/media.tts/live/wp-content/uploads/2023/11/21052600/fall-tree-with-crew.jpg',
     title: 'Tree Trimming & Pruning',
     desc: 'Regular trimming keeps your trees healthy, safe, and looking their best. We shape, thin, and lift canopies to improve light and airflow.',
     bullets: ['Crown thinning & shaping', 'Dead branch removal', 'Canopy lifting', 'Vista pruning'],
   },
   {
-    img: '/svc-removal.webp',
+    img: 'https://images.pexels.com/photos/34674271/pexels-photo-34674271.jpeg',
     title: 'Tree Removal',
     desc: 'Dead, diseased, or dangerously positioned trees removed safely and efficiently — from small yard trees to large hardwoods.',
     bullets: ['Full tree takedown', 'Sectional felling', 'Crane-assisted removal', 'Root ball extraction'],
   },
   {
-    img: '/svc-stump.webp',
+    img: 'https://monitor.net.au/wp-content/uploads/2025/04/Rayco-RG55-1.jpg',
     title: 'Stump Grinding',
     desc: 'We grind stumps below ground level so you can replant, lay turf, or pave — leaving your yard clean and flat.',
     bullets: ['Grinding below grade', 'Debris & chip cleanup', 'Multiple stumps', 'Same-day available'],
   },
   {
-    img: '/svc-lot.webp',
+    img: 'https://brightllc.us/wp-content/uploads/2025/11/equipment-land-clearing.jpg',
     title: 'Lot Clearing',
     desc: 'Full land clearing for new construction, landscaping projects, or overgrown properties. We handle trees, brush, and stumps in one visit.',
     bullets: ['Residential & commercial', 'Brush & underbrush', 'Haul-away included', 'Large acreage'],
   },
   {
-    img: '/svc-storm.webp',
+    img: 'https://georgiapineslandscaping.com/images/img-86ff80bf434f.webp',
     title: 'Storm Damage Cleanup',
     desc: 'Fast response after storms. We remove fallen trees, clear debris, and make your property safe — available for emergency call-outs.',
     bullets: ['24/7 emergency response', 'Fallen tree removal', 'Hazard limb clearing', 'Insurance documentation'],
   },
   {
-    img: '/opt_about-climber.webp',
+    img: 'https://firmanirrigation.com/wp-content/uploads/2025/03/IMG_2495-scaled-e1741962348791-1024x842.jpeg',
     title: 'Tree Health & Cabling',
     desc: 'Proactive care to extend the life of your valuable trees. We assess, treat, and structurally support trees at risk of failure.',
     bullets: ['ISA arborist assessment', 'Structural cabling', 'Disease & pest treatment', 'Fertilisation programs'],
@@ -53,7 +53,7 @@ export default function Services() {
           {services.map((s) => (
             <div key={s.title} className="service-card">
               <div className="service-card-img-wrap">
-                <img src={s.img} alt={s.title} className="service-card-img" />
+                <img src={s.img} alt={s.title} className="service-card-img" width="400" height="200" />
               </div>
               <div className="service-card-body">
                 <h3 className="service-card-title">{s.title}</h3>
