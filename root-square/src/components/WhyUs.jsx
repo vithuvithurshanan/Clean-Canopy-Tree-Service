@@ -2,21 +2,21 @@ import { PHONE } from '../constants'
 
 const cards = [
   {
-    img: '/svc-trimming.webp',
+    img: 'https://images.pexels.com/photos/34674271/pexels-photo-34674271.jpeg',
     title: 'Tree Trimming & Pruning',
     text: 'Shape, thin, and lift your trees for better health, light, and curb appeal.',
     rotate: -8,
     shift: -150,
   },
   {
-    img: '/svc-removal.webp',
+    img: 'https://images.pexels.com/photos/2902892/pexels-photo-2902892.jpeg',
     title: 'Tree Removal',
     text: 'Safe, efficient removal of dead, diseased, or hazardous trees — any size.',
     rotate: 0,
     shift: 0,
   },
   {
-    img: '/svc-stump.webp',
+    img: 'https://images.pexels.com/photos/11118633/pexels-photo-11118633.jpeg',
     title: 'Stump Grinding',
     text: 'Complete stump removal so your yard is clean, flat, and ready to use.',
     rotate: 8,
