@@ -31,7 +31,7 @@ export default function Footer({ onTerms, onPrivacy }) {
 
           <div className="footer-actions">
             <a className="btn btn-white" href={`tel:${PHONE}`}>Call Now</a>
-            <a className="btn btn-white" href={`mailto:${EMAIL}`}>Email Us</a>
+            <a className="btn btn-white" href="#contact">Contact Us</a>
             <a
               className="footer-social"
               href={INSTAGRAM_URL}

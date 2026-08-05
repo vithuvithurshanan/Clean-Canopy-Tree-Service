@@ -80,16 +80,16 @@ h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
 .btn-primary { background-color: var(--green-primary); color: var(--white); }
 .btn-primary:hover { box-shadow: 0 8px 20px rgba(26, 217, 118, 0.35); }
 
-.btn-accent { background-color: var(--yellow); color: var(--green-dark); }
-.btn-accent:hover { box-shadow: 0 8px 20px rgba(255, 213, 0, 0.4); }
+.btn-accent { background-color: var(--green-primary); color: var(--white); }
+.btn-accent:hover { box-shadow: 0 8px 20px rgba(26, 217, 118, 0.4); }
 
 .btn-white { background-color: var(--white); color: var(--green-dark); }
 .btn-white:hover { box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3); }
 
 .btn-outline {
   background-color: transparent;
-  color: inherit;
-  border: 1.5px solid currentColor;
+  color: var(--green-dark);
+  border: 2px solid var(--green-dark);
 }
 
 /* ---- Chips / pills ---- */
@@ -144,7 +144,25 @@ a:focus-visible, button:focus-visible {
 }
 .nav-logo { display: flex; align-items: center; gap: 0.5rem; font-family: 'Neucha', cursive; font-size: 1.3rem; color: var(--green-dark); }
 .nav-links { display: flex; gap: 1.75rem; font-size: 0.95rem; font-weight: 500; color: var(--green-dark); }
-.nav-links a:hover { color: var(--green-mid); }
+/* FREE ESTIMATE nav button — white border/text when over hero, dark when scrolled */
+.nav-free-estimate {
+  border-color: #fff;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.55rem 1.2rem;
+}
+.nav-scrolled .nav-free-estimate {
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+
+/* Mobile menu overlay — closes sidebar on outside click */
+.nav-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  background: rgba(0, 0, 0, 0.35);
+}
 .nav-links a.nav-link-active {
   color: var(--green-primary) !important;
   font-weight: 700;
@@ -175,6 +193,7 @@ a:focus-visible, button:focus-visible {
 .nav:not(.nav-scrolled) .nav-mobile a.nav-link-active {
   color: #a8f0c6;
 }
+
 .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
 .nav-cta { padding: 0.6rem 1.4rem; font-size: 0.85rem; }
 .nav-burger { display: none; flex-direction: column; gap: 5px; width: 28px; padding: 4px; }
@@ -318,7 +337,7 @@ a:focus-visible, button:focus-visible {
 .team-stats > div { display: flex; flex-direction: column; gap: 0.15rem; }
 .team-stat-label { opacity: 0.75; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .team-card-actions { display: flex; gap: 0.75rem; }
-.team-card .btn-outline { border-color: rgba(255, 255, 255, 0.6); }
+.team-card .btn-outline { border-color: rgba(255, 255, 255, 0.6); color: #fff; }
 .team-card .btn-primary { background: var(--green-dark); }
 .team-drag-hint { margin-top: 0.75rem; font-size: 0.78rem; color: var(--green-mid); text-align: center; }
 
@@ -812,3 +831,5 @@ a:focus-visible, button:focus-visible {
   .legal-modal-header { padding: 1.25rem 1.25rem; }
   .legal-modal-body { padding: 1.25rem; }
 }
+
+.nav-links a:hover { color: var(--green-mid); }
